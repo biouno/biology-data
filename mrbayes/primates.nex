@@ -31,19 +31,3 @@ Saimiri_sciureus    AAGCTTCACCGGCGCAATGATCCTAATAATCGCTCACGGGTTTACTTCGTCTATGCTATT
 
 end;
 
-begin mrbayes;
-prset brlenspr=unconstrained:exp(10.0);
-prset shapepr=exp(1.0);
-prset tratiopr=beta(1.0,1.0);
-prset statefreqpr=dirichlet(1.0,1.0,1.0,1.0);
-lset nst=2 rates=gamma ngammacat=4;
-mcmcp ngen=10000 samplefreq=10 printfreq=100 nruns=1 nchains=3 savebrlens=yes;
-outgroup Pan;
-set autoclose=yes;
-mcmc;
-sump burnin=250;
-sumt burnin=250;
-quit;
-end;
-
-
