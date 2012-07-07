@@ -33,7 +33,8 @@ end;
 
 begin mrbayes;
   set autoclose=yes nowarn=yes;
-  mcmcp ngen=10000 samplefreq=10 printfreq=1000 nruns=1 nchains=3 savebrlens=yes;
+  mcmcp ngen=10000 samplefreq=10 printfreq=1000 nruns=2 nchains=4 savebrlens=yes;
   mcmc;
+  log start filename=primates.log;
   quit;  
 end;
