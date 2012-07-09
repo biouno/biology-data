@@ -16,7 +16,7 @@ can find a brief introduction on how to use it.
 
 1. Ensure relevant R packages are installed
 2. cd to the working directory.
-3. Open R in command console by typing the path of the "bin" folder containing the "Rscript" application, the name of the R script file (eg Rscript.r), and then -h.
+3. Open R in command console by typing the path of the "bin" folder containing the "Rscript" application, the name of the R script file (eg mrbayes_diagnostics_plots.r), and then -h.
 
 e.g. "C:\Program Files\R\bin\Rscript mrbayes_diagnostics_plots.r -h"  
 
