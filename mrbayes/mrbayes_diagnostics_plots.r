@@ -147,10 +147,10 @@ for(i in seq(1, numberofruns, length=numberofruns)) {
   run_file_name <- paste(input_root, ".run",toString(i),".p",sep="")
   run_file <- read.table(file=run_file_name,header=T,comment.char="[")
   # LbL
-  output_file <- paste("lbl_run",toString(i),"_graph",toString(i),
+  output_file <- paste("lnl_run",toString(i),"_graph",toString(i),
                        ".png",sep="")
   if(verbose) {
-    print(paste("Plotting LbL of run file", toString(i), "to", output_file))
+    print(paste("Plotting LnL of run file", toString(i), "to", output_file))
   }
   png(output_file)
   plot_MrBayesStats(run_file$Gen, run_file$LnL, 
@@ -158,7 +158,7 @@ for(i in seq(1, numberofruns, length=numberofruns)) {
                     colour = colour_vector[2])
   invisible(dev.off())
   # LnL
-  output_file <- paste("lnl_run",toString(i),"_graph",toString(i),
+  output_file <- paste("lnl_burnin_run_",toString(i),"_graph",toString(i),
                        ".png",sep="")
   if(verbose) {
     print(paste("Plotting LnL of run file", toString(i), "to", output_file))
@@ -193,7 +193,9 @@ for(r in seq(1, numberofruns, length=numberofruns)) {
         png(output_file)
         y_axis = eval(as.name(paste("Swap.",toString(i),"..",toString(j),
                                     "..acc.",toString(r),".", sep="")))
-        plot_MrBayesStats(Gen,y_axis,ylabel="Chain swaps 1<->2 run 2",
+        y_label = paste("Chain swaps", toString(i), toString(j), "run", 
+                        toString(r), sep=" ")
+        plot_MrBayesStats(Gen,y_axis,ylabel=y_label,
                           colour=colour_vector[4], burnin=skiplines,
                           pasteMean=T,ylimited01=T)
         invisible(dev.off())
