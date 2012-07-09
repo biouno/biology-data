@@ -9,7 +9,7 @@ can find a brief introduction on how to use it.
 
 ### Files
 
-1.Save R script file (eg Rscript.r) to your results folder.
+1. Save R script file (mrbayes_diagnostics_plots.r) to your results folder.
 2. Save Mrbayes output files to results folder. 
 
 ###System Setup
@@ -24,10 +24,9 @@ Or
 
 Avoiding the inconvenience of type the bin path each time, add the bin path to the path variable list i.e. Select computer ->properties -> advanced settings-> environmental variables. Under "System variables double click the "Path" variable and add the path of the R "bin" folder the the "variable value" list. Ok all changes.
 
-eg e.g. "Rscript mrbayes_diagnostics_plots.r -h" 
+e.g. "Rscript mrbayes_diagnostics_plots.r -h" 
 
 ###Running plots
 
 Modify settings as appropriate, and enter. 
-
 
