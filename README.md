@@ -18,13 +18,13 @@ can find a brief introduction on how to use it.
 2. cd to the working directory.
 3. Open R in command console by typing the path of the "bin" folder containing the "Rscript" application, the name of the R script file (eg Rscript.r), and then -h.
 
-e.g. "C:\Program Files\R\bin\Rscript.r -h"  
+e.g. "C:\Program Files\R\bin\Rscript mrbayes_diagnostics_plots.r -h"  
 
 Or
 
 Avoiding the inconvenience of type the bin path each time, add the bin path to the path variable list i.e. Select computer ->properties -> advanced settings-> environmental variables. Under "System variables double click the "Path" variable and add the path of the R "bin" folder the the "variable value" list. Ok all changes.
 
-eg e.g. "Rsc Rscript.r -h" 
+eg e.g. "Rscript mrbayes_diagnostics_plots.r -h" 
 
 ###Running plots
 
