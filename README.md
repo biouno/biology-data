@@ -9,14 +9,14 @@ can find a brief introduction on how to use it.
 
 ### Files
 
- 1.Save R script file (eg Rscript.r) to your results folder.
- 2. Save Mrbayes output files to results folder. 
+1.Save R script file (eg Rscript.r) to your results folder.
+2. Save Mrbayes output files to results folder. 
 
 ###System Setup
 
- 1. Ensure relevant R packages are installed
- 2. cd to the working directory.
- 3. Open R in command console by typing the path of the "bin" folder containing the "Rscript" application, the name of the R script file (eg Rscript.r), and then -h.
+1. Ensure relevant R packages are installed
+2. cd to the working directory.
+3. Open R in command console by typing the path of the "bin" folder containing the "Rscript" application, the name of the R script file (eg Rscript.r), and then -h.
 
 e.g. "C:\Program Files\R\bin\Rscript.r -h"  
 
