@@ -185,7 +185,7 @@ for(r in seq(1, numberofruns, length=numberofruns)) {
     if(next_value <= numberofchains) {
       for(j in seq(next_value, numberofchains)) {
         output_file <- paste("chain_swaps_",toString(i),"_",toString(j),
-                             "_run_",toString(r),".png")
+                             "_run_",toString(r),".png",sep="")
         if(verbose) {
           print(paste("Plotting run", r, "chain swap file from", 
                       toString(i),"to",toString(j),"to file", output_file))
